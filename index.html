@@ -1,12 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travelo</title>
+    <link rel="stylesheet" href="dist/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!--header content with position has fixed, logic to navigate is written in this block-->
+    <header class="header-block">
+        <div class="middle-section">
+            <img class="travelo-image" src="Images/Group 39708@2x.png">
+        </div>
+        <div class="middle-section">
+            <a href="">Home</a>
+            <a href="#about">About</a>
+            <a href="#places">Places</a>
+            <a href="#register">Register</a>
+            <a href="#blogs">Blog</a>
+        </div>
+        <div class="right-section">
+            <!-- // custom classes created using sass bg-button-color, text-secondary -->
+            <button class="connect-button btn-button-color text-secondary">Connect</button>
+        </div>
+    </header>
+    <!--Block with Info about About for Info regarding styling look into index.css file-->
+    <article class="article-block">
+        <h1>TRAVEL TO EXPLORE</h1>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            esse ratione necessitatibus dicta neque molestias
+            totam corrupti, perspiciatis exercitationem repellendus. Veritatis error eligendi id aliquid expedita, esse
+            earum velit sunt!</h4>
+              <!-- // custom classes created using sass bg-button-color, text-secondary -->
+            <div class="article-explore-now-block text-dark bg-secondary">
+             <div><p>Where you want to go</p>
+                <div >
+                    <img src="Images/search.svg"><p class="article-explore-now-search-text">Search your Location</p>
+                </div>
+             </div>
+             <div><p>Check-in</p><p class="article-explore-now-text">Add Date</p></div>
+             <div><p>Check-out</p><p class="article-explore-now-text">Add Date</p></div>
+             <!-- demonstarted the mixins feature of sass -->
+             <div><button class="explore-now-button btn-button-color text-secondary">Explore Now</button></div>
+            </div>
+    </article>
+    <h1 class="about-heading">About</h1>
+    <div id="about">
+        <div class="about-block">
+            <figure class="about-pic">
+                <img src="Images/bestPrice.png" alt="n/a">
+                <figcaption>Get Best Prices</figcaption>
+                <p>Pay through our application and save thousands and get amazing rewards</p>
+            </figure>
+            <figure class="about-pic">
+                <img src="Images/Nearby@2x.png" alt="n/a">
+                <figcaption>Find the best Near you</figcaption>
+                <p>Find the best hotels and places to visit near you in a single click</p>
+            </figure>
+            <figure class="about-pic">
+                <img src="Images/covid_19.png" alt="n/a">
+                <figcaption>Find the best Near you</figcaption>
+                <p>Find the best hotels and places to visit near you in a single click</p>
+            </figure>
+            <figure class="about-pic">
+                <img src="Images/card.png" alt="n/a">
+                <figcaption>Find the best Near you</figcaption>
+                <p>Find the best hotels and places to visit near you in a single click</p>
+            </figure>
+        </div>
+    </div>
+    <!--Block with Info about Recommended Places for Info regarding styling look into index.css file-->
+    <div id="places">
+        <h1 class="recommended-places-heading">The Recommended Places</h1>
+        <div class="Recommended-Places-text">
+            <p>The Weekend Break</p>
+            <p>The Package Holiday</p>
+            <p>The Group Tour</p>
+            <p>Long Term Slow Travel</p>
+        </div>
+        <hr>
+        <div class="Recommended-Places-block">
+            <figure class="Recommended-Places-block-figure">
+                <img src="Images/singapore.jpg" alt="n/a">
+                <figcaption>Singapore</figcaption>
+                <p>Singapore, offically the Republic of Singapore, is a sovereign island city-state in maritime
+                    Southeast</p>
+                <div class="Recommended-Places-logo-block"><img src="Images/travel_explore.svg"><img src="Images/dining.svg">
+                    <img src="Images/airplane.svg">
+                    <span>&#8377; 38,800</span>
+                </div>
+                <p>1000 kms <span>Approx 2 night 2 day trip</span></p>
+            </figure>
+            <figure class="Recommended-Places-block-figure">
+                <img src="Images/Thailandjpg.jpg" alt="n/a">
+                <figcaption>Thailand</figcaption>
+                <p>Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces</p>
+                <div class="Recommended-Places-logo-block"><img src="Images/travel_explore.svg"><img src="Images/dining.svg">
+                    <img src="Images/airplane.svg">
+                    <span>&#8377; 38,800</span>
+                </div>
+                <p>1000 kms <span>Approx 3 night 2 day trip</span></p>
+            </figure>
+            <figure class="Recommended-Places-block-figure">
+                <img src="Images/paris.jpg" alt="n/a">
+                <figcaption>Paris</figcaption>
+                <p>Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy
+                </p>
+                <div class="Recommended-Places-logo-block"><img src="Images/travel_explore.svg"><img src="Images/dining.svg">
+                    <img src="Images/airplane.svg">
+                    <span>&#8377; 38,800</span>
+                </div>
+                <p>1000 kms <span>Approx 3 night 2 day trip</span></p>
+            </figure>
+            <figure class="Recommended-Places-block-figure">
+                <img src="Images/neazealand.jpg" alt="n/a">
+                <figcaption>New Zealand</figcaption>
+                <p>New Zealand is an island country in the southwestern Pacific Ocean. It consists of two main</p>
+                <div class="Recommended-Places-logo-block"><img src="Images/travel_explore.svg"><img src="Images/dining.svg">
+                    <img src="Images/airplane.svg">
+                    <span>&#8377; 38,800</span>
+                </div>
+                <p>1000 kms <span>Approx 1 night trip</span></p>
+            </figure>
+            <figure class="Recommended-Places-block-figure">
+                <img src="Images/borabora.png" alt="n/a">
+                <figcaption>Bora Bora</figcaption>
+                <p>Bora Bora is a small South Pacific island northwest of Tahiti in French Polynesia. Surrounded by sand
+                </p>
+                <div class="Recommended-Places-logo-block"><img src="Images/travel_explore.svg"><img src="Images/dining.svg">
+                    <img src="Images/airplane.svg">
+                    <span>&#8377; 38,800</span>
+                </div>
+                <p>1000 kms <span>Approx 2 night 2 day trip</span></p>
+            </figure>
+            <figure class="Recommended-Places-block-figure">
+                <img src="Images/london.jpg" alt="n/a">
+                <figcaption>London</figcaption>
+                <p>London, the capital of England and the United Kingdom, is a 21st-century city with history</p>
+                <div class="Recommended-Places-logo-block"><img src="Images/travel_explore.svg"><img src="Images/dining.svg">
+                    <img src="Images/airplane.svg">
+                    <span>&#8377; 38,800</span>
+                </div>
+                <p>1000 kms <span>Approx 3 night 2 day trip</span></p>
+            </figure>
+        </div>
+    </div>
+    <div id="register">
+        <h1 class="register-heading">Register to explore world</h1><br><br>
+        <form method="GET" oninput="O1.value = parseInt(R1.value)">
+            <div class="register-block">
+                <!-- input fields types text/password/email/number  -->
+                Username:<input type="text" pattern="[A-Za-z]" autocomplete />
+                Password:<input type="password" required />
+                Email Id:<input type="email" autofocus />
+                Country code: <select>
+                    <option value="">-- Please choose a country code --</option>
+                    <option value="+213">+213</option>
+                    <option value="+91">+91</option>
+                    <option value="+244">+244</option>
+                    <option value="+61">+61</option>
+                    <option value="+973">+973</option>
+                </select>
+                Contact:<input type="tel" placeholder="Format: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                <!-- input fields type checkbox -->
+                Select Travel Country:
+                <select>
+                    <option value="Singapore">Singapore </option>
+                    <option value="Thailand">Thailand </option>
+                    <option value="Paris">Paris </option>
+                    <option value="London" selected>London </option>
+                    <option value="New Zealand" selected>New Zealand </option>
+                </select>
+
+                <!-- input field type radio button -->
+                <!-- Select One:
+                <input type="radio" name="travel" value="Alone" checked /> Alone
+                <input type="radio" name="travel" value="Group" /> Group  -->
+                <!-- input field type date -->
+                Choose a date: <input type="date" />
+                <!-- input field type hidden -->
+                <input type="hidden" name="language" value="english" />
+                <!-- input field type url -->
+                Enter the URL of your favourite destination: <input type="url" />
+                <!-- input field type file -->
+                Upload Identity Proof:<input type="file" multiple />
+
+                <!-- input type range -->
+                Select your Ideal budget in Dollars($):<input type="range" id="R1" min="0" max="100" step="10" />
+                <output for="R1" id="O1"></output>
+                <!-- input field type reset -->
+                <input type="reset" value="Click here to reset above Info" />
+                <!-- input field type submit -->
+                <input type="submit" />
+        </form>
+    </div><br>
+    <!--Block with Info about Blogs-->
+    <div id="blogs">
+        <h1 class="blogs-heading">Blogs</h1>
+        <div class="blogs-block">
+            <div class="blogs-mountain-pic"><img src="Images/mountain.jpg">
+                <div class="blogs-absolute">The Ultimate Guide to Climbing Mount Kilimanjaro</div>
+            </div>
+            <div class="blogs-horizontal-block">
+                <div class="blogs-new-traveller"><img src="Images/aeroplane.jpg">
+                    <div class="blogs-absolute-vertical">12 Things I'd Tell Any New Traveller</div>
+                </div>
+                <div class="blogs-ultimate-packing"><img src="Images/taj.jpg">
+                    <div class="blogs-absolute-vertical-2">The ultimate Packing List for Female Travelers</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Block with Info about Happy Customers-->
+    <div id="happy-customer-section">
+        <h1 class="happy-customer-h1">Happy Customer</h1>
+        <div class="happy-customer-block">
+            <div class="happy-customer-box">
+                <div class="happy-customer-pic">
+                    <img src="Images/waves.png">
+                </div>
+                <div class="happy-customer-horizontal">
+                    <div class="happy-customer-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                        culpa possimus suscipit,
+                        officiis saepe pariatur commodi tempora,
+                        non quibusdam explicabo rerum magnam temporibus, hic placeat quidem cum ducimus laboriosam
+                        minus! officiis saepe pariatur commodi tempora,
+                        non quibusdam explicabo rerum magnam temporibus, hic placeat quidem cum ducimus laboriosam</div>
+                    <div class="happy-customer-profile-info">
+                        <img src="Images/profile-pic.jpeg">
+                        <div class="happy-customer-profile-info-contents">
+                            <div class="happy-customer-profile-info-name">Barney Stinson</div>
+                            <div>Project Manager flyhigh</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="happy-customer-box">
+                <div class="happy-customer-pic">
+                    <img src="Images/waves.png">
+                </div>
+                <div class="happy-customer-horizontal">
+                    <div class="happy-customer-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                        culpa possimus suscipit,
+                        officiis saepe pariatur commodi tempora,
+                        non quibusdam explicabo rerum magnam temporibus, hic placeat quidem cum ducimus laboriosam
+                        minus! officiis saepe pariatur commodi tempora,
+                        non quibusdam explicabo rerum magnam temporibus, hic placeat quidem cum ducimus laboriosam</div>
+                    <div class="happy-customer-profile-info">
+                        <img src="Images/profile-pic.jpeg">
+                        <div class="happy-customer-profile-info-contents">
+                            <div class="happy-customer-profile-info-name">Barney Stinson</div>
+                            <div>Project Manager flyhigh</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer content with nav controls-->
+    <footer id="connect">
+        <p class="footer-text"><span class="Copyright-text">Copyright &#169 2020 Travelo. All rights reserved</span>
+            <span class="nav-text"><a href="#">Home</a></span>
+            <span class="nav-text"><a href="#about">About</a></span>
+            <span class="nav-text"><a href="#places">Places</a></span>
+            <span class="nav-text"><a href="#register">Register</a></span>
+            <span class="nav-text"><a href="#blogs">Blogs</a></span>
+            <a href="https://www.facebook.com/"><img class="facebook-logo" src="Images/Facebook-Logo.png" alt="n/a"></a>
+            <a href="https://www.linkedin.com/in/anuragnandre/"><img class="linkedIn-Insta-logo"
+                    src="Images/linkedIn.png" alt="n/a"></a>
+            <a href="https://www.instagram.com/"><img class="linkedIn-Insta-logo" src="Images/Insta-logo.png"
+                    alt="n/a"></a>
+        </p>
+    </footer>
 </body>
+
 </html>

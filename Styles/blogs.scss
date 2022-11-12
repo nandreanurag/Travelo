@@ -1,0 +1,66 @@
+/* contains styles specific to blogs block */
+/* block is further divided into multiple grids look code for better understanding */
+// demonstrated the use of sass variables
+// demonstarted the use of inheritance
+@use 'variables' as v;
+.grid-layout{
+    display: grid;
+    position: relative;
+    align-items: center;
+}
+.blogs-heading {
+    text-align: center;
+}
+
+.blogs-block {
+    // display: grid;
+    @extend .grid-layout;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 20px;
+    row-gap: 20px;
+    // position: relative;
+    // align-items: center;
+    margin-left:40px;
+    margin-right:40px;
+    margin-top: 30px;
+    font-family: v.$primary-text;
+    font-weight: 500px;
+    color:v.$secondary-color;
+}
+/* descendant */
+.blogs-block img{
+    width: 100%;
+    height: 190px;
+    border-radius: 20px;
+}
+/* child */
+.blogs-mountain-pic>img{
+    height: 400px;
+}
+.blogs-horizontal-block{
+    @extend .grid-layout;
+    // display: grid;
+    row-gap: 20px;
+    // position: relative;
+    grid-template-rows: 1fr 1fr;
+
+}
+.blogs-absolute{
+    position: absolute;
+    width: 230px;
+    top: 190px;
+    font-size: 24px;
+    left:180px;
+}
+.blogs-absolute-vertical{
+    position: absolute;
+    font-size: 20px;
+    top:85px;
+    left:150px;
+}
+.blogs-absolute-vertical-2{
+    position: absolute;
+    font-size: 20px;
+    top:285px;
+    left:90px;
+}

@@ -1,0 +1,48 @@
+/* contains styles specific to header block */
+/* block is further divided into multiple grids look code for better understanding */
+/* demonstarted the usecase of psuedo class, psuedo element */
+/* demonstarted the usecase of sass variables */
+@use 'variables' as v;
+.header-block {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 15px;
+    justify-content: space-between;
+    height: 60px
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+.header-block p {
+    font-family:v.$primary-text;
+    font-size: v.$base-font-size;
+    color: map-get($map: v.$colors, $key: dark);
+}
+
+.left-section {
+    margin-right: 200px;
+}
+
+.middle-section {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+
+}
+/* psuedo class */
+// sass variable
+.connect-button {
+    // color:v.$secondary-color;
+    // background-color:v.$primary-button;
+    padding: 5px;
+    margin-left: 300px;
+    border-radius: 15px;
+}
+.connect-button:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,74 @@
+/* contains styles specific to article block */
+/* block is further divided into multiple grids look code for better understanding */
+/* Demonstarted the usecase of psuedo element */
+// demonstrated the use of sass variables,map
+@use 'variables' as v;
+.flex-layout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.article-block{
+    background-image:url('../Images/lalo-hernandez-Amo081zdJsI-unsplash.png'); 
+    // sass map
+    color:map-get($map: v.$colors, $key: secondary); 
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 140px;
+    margin-bottom: 40px;
+    height:468px;
+}
+.article-block p{
+    margin:0px
+}
+.article-block h1{
+    font-weight: bold;
+    font-size: 32px;
+}
+/* psuedo element */
+.article-block h1::selection{
+    color: v.$error;
+}
+.article-block h4::selection{
+    color: v.$error;;
+}
+.article-block {
+    h4{
+    font-family: Arial;
+    font-size: 18px;
+    padding-left:420px;
+    padding-right: 420px;}
+}
+
+.article-explore-now-block{
+    @extend .flex-layout;
+    // display: flex;
+    // background-color: rgb(248, 252, 252);
+    text-align: center;
+    width: 700px;
+    height:70px;
+    margin: auto;
+    border-radius: 10px;
+    // color: black;
+    // justify-content: space-between;
+    // align-items: center;
+    padding: 13px;
+    font-family: v.$primary-text;
+    font-weight: 500;
+}
+.explore-now-button{
+    color:v.$secondary-color;
+    // background-color:v.$primary-button;
+    height: 50px;
+    border-radius: 10px;
+}
+.article-explore-now-search-text{
+    color: rgba(174, 168, 163, 0.208);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.article-explore-now-text{
+    margin-top: 10px;
+    color: rgba(174, 168, 163, 0.208);
+}

@@ -1,0 +1,14 @@
+/* This file combines all individual css files, basically it merges all styles together */
+/* ensure to follow similar code structure for better code quality and readability */
+@import 'header';
+@import 'general';
+@import 'article';
+@import 'about';
+@import 'places';
+@import 'register';
+@import 'blogs';
+@import 'footer';
+@import 'happy-customers';
+@import 'variables';
+@import 'colors';
+@import 'button'

@@ -1,0 +1,63 @@
+/* contains styles specific to places block */
+/* block is further divided into multiple grids look code for better understanding */
+/* Demonstrated the usecase of child, descendant combinators */
+@use 'variables' as v;
+.recommended-places-heading{
+    text-align: center;
+}
+.Recommended-Places-block{
+ display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+.Recommended-Places-text{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+/* descendent */
+.Recommended-Places-text p{
+    padding-left: 85px;
+    margin-bottom: 0px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Recommended-Places-block-figure{
+    background-color: v.$primary-text;
+    border-radius: 10px ;
+    width:385px;
+
+}
+/* Child */
+.Recommended-Places-block-figure>img{
+   height: 240px;
+   width:380px;
+   margin-bottom: 10px;
+   border-radius: 10px ;
+}
+/* child */
+.Recommended-Places-block-figure p{
+    font-size: 16px;
+    font-family: Arial;
+ }
+ /* child */
+ .Recommended-Places-block-figure span{
+    margin-left:130px
+ }
+ .Recommended-Places-logo-block img{
+    // background-color: rgb(10, 25, 80);
+    // border-radius: 10px;
+    margin-right: 6px;
+ }
+//  sass variable
+ .Recommended-Places-logo-block span{
+    font-family: v.$primary-text;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 203px;
+    vertical-align: top;
+ }
+

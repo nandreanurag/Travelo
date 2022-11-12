@@ -1,0 +1,31 @@
+/* contains styles specific to about block */
+/* block is further divided into multiple grids look code for better understanding */
+/* Demostrated usage of Adajacent combinator */
+// demonstrated the use of sass variables
+// demonstrated the use of inheritance
+@use 'variables' as v;
+.about-block {
+    @extend .flex-layout;
+    margin: 30px;
+}
+.about-pic{
+    // width: 225px;
+    // padding-left: 10px;
+    // padding-right: 30px;
+    border-radius: 8px;
+    background-color:map-get($map:v.$colors , $key:primary );
+}
+/* Adajacent */
+// sass variable
+figcaption + p {
+    font-family:v.$primary-text;
+    font-weight: 300;
+}
+.about-pic img{
+    padding: 10px;
+    height: 60px;
+    width: 50px;
+}
+.about-heading{
+    text-align: center;
+}

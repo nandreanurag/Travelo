@@ -1,0 +1,12 @@
+/* contains styles specific to register block */
+/* block is further divided into multiple grids look code for better understanding */
+.register-heading {
+    text-align: center;
+}
+
+.register-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
